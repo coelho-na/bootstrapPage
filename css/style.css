@@ -153,6 +153,7 @@ ul {
   min-height: 100vh;
   padding: 150px 0;
   background-color: var(--main-to-dark-color);
+  border-radius: 0 0 200px 0;
 }
 
 .home__text h1 {
@@ -227,3 +228,5 @@ ul {
   animation: none;
   box-shadow: var(--shadow-black-300);
 }
+
+/*Video Pop Up*/
