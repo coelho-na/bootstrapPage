@@ -23,7 +23,7 @@ function videoPop() {
 function navBarShrink() {
   const navBar = document.querySelector(".navbar");
   window.addEventListener("scroll", function () {
-    if (this.scrollY > 90) {
+    if (this.scrollY > 75) {
       navBar.classList.add("navbar-shrink");
     } else {
       navBar.classList.remove("navbar-shrink");
