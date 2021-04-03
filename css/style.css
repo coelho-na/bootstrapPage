@@ -102,6 +102,34 @@ ul {
   }
 }
 
+.effect-wrap .effect {
+  position: absolute;
+  z-index: -1;
+}
+.effect-wrap .effect-1 {
+  left: 20%;
+  top: 20%;
+  font-size: 20px;
+  color: var(--color-2);
+  animation: spin_01 5s linear infinite;
+}
+
+.effect-wrap .effect-2 {
+  right: 5%;
+  top: 10%;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  animation: spin_01 7s linear infinite;
+}
+
+.effect-wrap .effect-3 {
+  left: 5%;
+  bottom: 30%;
+  font-size: 25px;
+  color: var(--color-3);
+  animation: bounceTop_01 3s linear infinite;
+}
+
 /*Nav Bar*/
 
 .navbar {
@@ -154,6 +182,8 @@ ul {
   padding: 150px 0;
   background-color: var(--main-to-dark-color);
   border-radius: 0 0 200px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .home__text h1 {
