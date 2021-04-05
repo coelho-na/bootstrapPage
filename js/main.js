@@ -1,4 +1,4 @@
-window.onload = [videoPop(), navBarShrink()];
+window.onload = [videoPop(), navBarShrink(), toCaroussel()];
 
 function videoPop() {
   const atributte = document.querySelector("#player-1").getAttribute("src");
@@ -28,6 +28,25 @@ function navBarShrink() {
     } else {
       navBar.classList.remove("navbar-shrink");
     }
+  });
+}
+
+function toCaroussel() {
+  $(".features__carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
   });
 }
 
