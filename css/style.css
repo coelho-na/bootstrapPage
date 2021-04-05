@@ -535,3 +535,12 @@ ul {
 .style-4 {
   background-color: var(--main-color);
 }
+
+/*---------------------
+  App Screenshots Section
+*/
+
+.app-screenshots__item img {
+  width: 100%;
+  max-width: 250px;
+}
