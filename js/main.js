@@ -34,6 +34,7 @@ function navBarShrink() {
 function toCaroussel() {
   $(".features__carousel").owlCarousel({
     loop: true,
+    autoplay: true,
     margin: 0,
     responsiveClass: true,
     responsive: {
