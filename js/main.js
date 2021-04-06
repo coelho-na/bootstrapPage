@@ -73,7 +73,7 @@ function toCaroussel() {
   // Testimonials Carousel
   $(".testimonials__carousel").owlCarousel({
     loop: true,
-    // autoplay: true,
+    autoplay: true,
     margin: 0,
     responsiveClass: true,
     responsive: {
