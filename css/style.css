@@ -540,7 +540,21 @@ ul {
   App Screenshots Section
 */
 
+.app-screenshots__item {
+  margin: 15px;
+}
+
 .app-screenshots__item img {
   width: 100%;
   max-width: 250px;
+  display: block;
+  margin: auto;
+}
+
+/*-----------------------
+  App Download
+*/
+
+.app-download {
+  background-image: url("../img/download-app-bg.jpg");
 }
