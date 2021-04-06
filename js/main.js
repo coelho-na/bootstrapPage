@@ -32,6 +32,7 @@ function navBarShrink() {
 }
 
 function toCaroussel() {
+  // Features Carousel
   $(".features__carousel").owlCarousel({
     loop: true,
     autoplay: true,
@@ -49,6 +50,8 @@ function toCaroussel() {
       },
     },
   });
+
+  // App Screenshots Carousel
   $(".app-screenshots__carousel").owlCarousel({
     loop: true,
     autoplay: true,
@@ -63,6 +66,25 @@ function toCaroussel() {
       },
       1000: {
         items: 4,
+      },
+    },
+  });
+
+  // Testimonials Carousel
+  $(".testimonials__carousel").owlCarousel({
+    loop: true,
+    // autoplay: true,
+    margin: 0,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
       },
     },
   });
