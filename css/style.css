@@ -767,7 +767,6 @@ ul {
 .pricing__planBox {
   box-shadow: var(--shadow-black-100);
   border-radius: 10px;
-  margin-bottom: 150px;
 }
 
 .pricing__header {
