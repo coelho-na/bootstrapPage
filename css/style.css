@@ -1017,7 +1017,7 @@ textarea.form-control {
 
 .footer {
   background-color: var(--main-color);
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 .footer__col h3 {
@@ -1052,4 +1052,14 @@ textarea.form-control {
 
 .footer__col ul li a:hover {
   padding-left: 5px;
+}
+
+.footer__copyright-text {
+  margin: 50px 0 0;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
