@@ -108,33 +108,13 @@ function toCaroussel() {
       },
     },
   });
-  //
+  // Scroll
   $.scrollIt({
     topOffset: -50,
   });
+
+  // Nav Bar Collapse
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
 }
-
-// Nav Bar Shrink Function with Jquery
-// $(document).ready(function () {
-//   $(window).on("scroll", function () {
-//     if ($(this).scrollTop() > 90) {
-//       $(".navbar").addClass("navbar-shrink");
-//     } else {
-//       $(".navbar").removeClass("navbar-shrink");
-//     }
-//   });
-// });
-
-// Videop Pop UP Function with Jquery
-// const videoSrc = $("#player-1").attr("src");
-// $(".video-play-btn").on("click", function(){
-//   if($(".video-popup").hasClass("open")){
-//   $(".video-popup").removeClass("open");
-//   $("#player-1").attr("src", "")
-//   } else{
-//     $(".video-popup").addClass("open");
-//     if($("#player-1").attr("src") == ""){
-//       $("#player-1").attr("src", videoSrc)
-//     }
-//   }
-// })
