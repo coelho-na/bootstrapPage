@@ -1,4 +1,4 @@
-window.onload = [videoPop(), navBarShrink(), toCaroussel()];
+window.onload = [videoPop(), navBarShrink(), toCaroussel(), scrollIt()];
 
 function videoPop() {
   const atributte = document.querySelector("#player-1").getAttribute("src");
@@ -107,6 +107,10 @@ function toCaroussel() {
         items: 3,
       },
     },
+  });
+  //
+  $.scrollIt({
+    topOffset: -50,
   });
 }
 
