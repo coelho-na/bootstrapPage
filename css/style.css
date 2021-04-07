@@ -920,6 +920,7 @@ ul {
 
 .accordion__header:not(.collapsed) {
   background-color: var(--main-color);
+  box-shadow: none;
 }
 .accordion__header:not(.collapsed) h3 {
   color: var(--black-000);
