@@ -36,6 +36,18 @@ body {
   line-height: 1.5;
 }
 
+body.dark {
+  background-color: var(--bg-dark);
+  --black-100: var(--bg-dark);
+  --black-000: var(--bg-dark);
+  --main-to-dark-color: var(--bg-dark);
+  --dark-to-main-color: var(--main-color);
+  --shadow-black-100: var(--shadow-black-300);
+  --black-alpha-100: rgba(255, 255, 255, 0.05);
+  --black-900: #ffffff;
+  --black-400: #bbbbbb;
+}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -63,7 +75,7 @@ ul {
 }
 
 .btn-1:hover {
-  color: var(--black-000);
+  color: #ffffff;
   background-color: var(--main-color);
 }
 .btn-2 {
@@ -214,7 +226,7 @@ ul {
 
 .navbar-brand {
   font-size: 30px;
-  color: var(--black-000);
+  color: #ffffff;
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -222,7 +234,7 @@ ul {
   margin-left: 40px;
 }
 .navbar .nav-item .nav-link {
-  color: var(--black-000);
+  color: #ffffff;
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 400;
@@ -237,7 +249,7 @@ ul {
   left: 0;
   right: 0;
   height: 1px;
-  background-color: var(--black-000);
+  background-color: #ffffff;
   transition: all 0.5s ease-in;
   transform: scale(0);
 }
@@ -260,13 +272,13 @@ ul {
 .home__text h1 {
   font-size: 45px;
   font-weight: 700;
-  color: var(--black-000);
+  color: #ffffff;
   margin: 0 0 20px;
 }
 .home__text p {
   font-size: 18px;
   line-height: 28px;
-  color: var(--black-000);
+  color: #ffffff;
   margin: 0;
   font-weight: 300;
 }
@@ -376,7 +388,7 @@ ul {
   text-align: center;
   cursor: pointer;
   line-height: 30px;
-  color: var(--black-000);
+  color: #ffffff;
 }
 
 .video-popup #player-1 {
@@ -526,7 +538,7 @@ ul {
   box-shadow: var(--shadow-black-100);
   border-radius: 10px;
   margin-top: 30px;
-  color: var(--black-000);
+  color: #ffffff;
 }
 .fun-facts__item h3 {
   font-size: 40px;
@@ -587,7 +599,7 @@ ul {
   z-index: 1;
 }
 .app-download .section-title h2 {
-  color: var(--black-000);
+  color: #ffffff;
 }
 
 .app-download::before {
@@ -719,7 +731,7 @@ ul {
   width: 30px;
   background-color: var(--main-color);
   border-radius: 50%;
-  color: var(--black-000);
+  color: #ffffff;
   font-size: 12px;
   line-height: 30px;
   text-align: center;
@@ -914,7 +926,7 @@ ul {
 
 .accordion__header:not(.collapsed)::before {
   content: "\f068";
-  color: var(--black-000);
+  color: #ffffff;
 }
 
 .accordion__header:not(.collapsed) {
@@ -922,7 +934,7 @@ ul {
   box-shadow: none;
 }
 .accordion__header:not(.collapsed) h3 {
-  color: var(--black-000);
+  color: #ffffff;
 }
 
 .accordion__body {
@@ -1003,6 +1015,7 @@ ul {
 .form-control:focus {
   border-color: var(--main-color);
   outline: none !important;
+  background-color: var(--black-000);
 }
 
 textarea.form-control {
@@ -1023,7 +1036,7 @@ textarea.form-control {
 .footer__col h3 {
   font-size: 18px;
   font-weight: 500;
-  color: var(--black-000);
+  color: #ffffff;
   margin: 0 0 25px;
 }
 
@@ -1062,6 +1075,29 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/*----------------------
+  Toggle Theme - Light and Dark
+*/
+
+.toggle-theme {
+  position: fixed;
+  right: 0;
+  top: calc(50% - 20px);
+  height: 40px;
+  width: 40px;
+  background-color: var(--dark-to-main-color);
+  z-index: 1200;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--black-000);
+  box-shadow: var(--shadow-black-300);
+  font-size: 16px;
+  text-align: center;
+}
+.toggle-theme i {
+  line-height: 40px;
 }
 
 /*-----------------------
